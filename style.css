@@ -10,6 +10,7 @@
 }
 
 html, body{
+    scroll-behavior: smooth;
     height: 100%;
     width: 100%;
     background-color: var(--beigewhite);
@@ -316,8 +317,8 @@ padding-left: 60px;
 #back-image{
     height: 90%;
     width: 100%;
-    background-image: url(https://dynamicmedia.audemarspiguet.com/is/image/audemarspiguet/image_code_HP_1920x1283?size=1920,0&wid=1920&fmt=avif-alpha&dpr=off);
-    background-size: contain;
+    background-image: url(https://cdn.dribbble.com/userupload/15909107/file/original-a9ccaac7cdcc9987561ef1538595dbbf.png?resize=1200x682);
+    background-size: cover;
     background-position: center;
 }
 
@@ -410,6 +411,124 @@ p{
     color: var(--washedparagraph);
 
 }
+#aboutwrapper{
+    display: flex;
+    width: 100%;
+   height: 250vh;
+    justify-content: space-between;
+   
+}
+
+#aboutvid{
+    background-color: #fff;
+    height: 100Vh;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+
+    
+}
+
+#aboutvid video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+   
+
+}
+
+.contentwrapper{
+    width: 100%;
+    height: 250vh;
+    padding: 60px;
+}
+.aboutmewrapper{
+    width: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border-bottom: 3px solid var(--black);
+    
+}
+
+.aboutmewrapper h4{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.01px;
+}
+.aboutmewrapper h1{
+    font-size: 120px;
+    padding: 20px 0px;
+    font-weight: 600;
+    width: 60%;
+    line-height: 50px;
+    letter-spacing: -2px;
+}
+
+
+.aboutmewrapper h3{
+    font-size: 44px;
+    font-weight: 600;
+    width: 60%;
+    line-height: 44px;
+    letter-spacing: -2px;
+}
+
+#skills{
+    padding: 40px 0px;
+    width: 100%;
+    border-bottom: 3px solid var(--black);
+    
+}
+
+
+#skills h4, i   {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    
+}
+.skillwrapper{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: left;
+}
+
+.gridbox{
+    margin-top: 20px;
+    display: flex;    
+    width: 100%;
+    justify-content: space-between;
+}
+
+#certifications{
+    padding: 40px 0px;
+    width: 100%;   
+    
+}
+.contentwrapper h2{
+    font-size: 56px;
+    font-weight: 700;
+    
+}
+
+.certificateswithdate{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--black);
+    width: 100%;
+}
+.certificateswithdate h4{
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+
 
 #letstalk{
     margin-top: none;
