@@ -1,21 +1,468 @@
 *{
-    margin: 0%;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    --black:#1e1e21;
+    --beigewhite:#f5f3ef;
+    --washedparagraph: #5E5D5E;
 }
 
 html, body{
-    width: 100%;
     height: 100%;
-    font-family: "Aref Ruqaa", serif;
-    font-style: normal;
-    background-color: #000;
-    color: rgb(146, 255, 36);
+    width: 100%;
+    background-color: var(--beigewhite);
 }
 
-.hero{
+#main{
+    height: 100%;
     width: 100%;
-    text-align: center;
-    font-size: 170px;
+    background-color: var(--beigewhite);
+    color: #1e1e21;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    top: 0%; right: 0%;
+    padding: 30px;
+    gap: 8px;
+}
+
+#menu h3{
+    padding: 20px;
+    font-weight: 700;
+    background-color: var(--black);
+    color: white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+
+}
+
+#menu i{
+    padding: 20px;
+    font-weight: 600; font-size: x-large;
+    background-color: var(--black);
+    color: white;
+    border-radius: 100px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+
+}
+h1{
+    font-weight: 600;
+}
+#intro-div{
+    padding: 60px 60px 10px 60px;
+    line-height: 145px;
+    width: 100%;  
     
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: -5px;
+}
+h4{
+    font-weight: 600;
+}
+#place{
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.01px;
+    
+}
+#hero-vid {
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+    overflow: hidden; /* Prevent overflow */
+    position: relative;
+}
+
+#hero-vid video {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensures the video covers the entire area without stretching */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+#about{
+    background-color: var(--beigewhite);
+    width: 100%;
+   height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  60px;
+}
+
+#about h2{
+   
+    font-size: 80px;
+    font-weight: 600;
+    width: 60%;
+    line-height: 80px;
+    letter-spacing: -2px;
+}
+
+#about-p2{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    justify-content: space-between;
+    border-left: 3px solid #000;
+    padding: 0px 60px;
+
+}
+
+#about-p2 h4{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.01px;
+}
+
+#megamenu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    background-color: var(--black);
+    color: var(--beigewhite);
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+
+#closeBtn {
+    position: fixed;
+    top: 40px;
+    right: 60px;
+    background-color: var(--black);
+    color: var(--beigewhite);
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+    border: solid 1px var(--beigewhite);
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+#megamenu .holdnavlinks{
+    display: flex;
+    align-items: center;
+}
+
+#megamenu .holdnavlinks i{
+    font-size: 50px;
+}
+
+#megamenu h2{
+    font-size: 120px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+
+#socials{
+    font-size: 24px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+#socials i{
+    background-color: var(--black);
+    color: var(--beigewhite);
+    padding: 12px;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+#work{
+    width: 100%;
+    /* height: 70%; */
+    background-color: var(--beigewhite);
+    padding: 50px 60px;
+    
+}
+#work-wrapper{
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid var(--black);
+    border-bottom: 3px solid var(--black);
+    padding: 60px 0px;
+}
+#work-p1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.01px;
+}
+
+
+#work-p2{
+    width: 65%;
+    padding-left: 60px;
+    border-left: 2px solid var(--black);
+
+}
+
+.w-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--washedparagraph);
+
+}
+
+.w-part2:nth-child(1){
+    border-bottom: 3px solid var(--black);
+    padding-bottom: 60px;
+}
+.w-part2:nth-child(2){
+    padding-top: 60px;
+}
+
+.w-part2 .elem{
+    width: 50%;
+    
+}
+
+.w-part2 .elem:nth-child(1){
+    border-right: 3px solid var(--black);
+}
+
+
+.w-part2 .elem:nth-child(2){
+padding-left: 60px;
+}
+
+.w-part2 .elem h4{
+    color: var(--black);
+    width: 90%;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 45px
+}
+
+.w-part2 .elem p{
+    margin-top: 15px;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--washedparagraph); 
+
+}
+
+#workslidewrapper{
+    width: 100%;
+    overflow: hidden;
+}
+#workslide {
+    padding: 0px 0px 40px 0px;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    
+    transform: translateX(100%); /* Start off-screen (right) */
+    transition: transform 0.1s ease; /* Smooth transition (for small jumps) */
+}
+
+
+.hid {
+    line-height: 135px;
+    width: 100%;
+    
+    font-size: 152px;
+    font-weight: 600;
+    letter-spacing: -10px;
+    text-transform: capitalize;
+   
+}
+
+
+#back-image{
+    height: 90%;
+    width: 100%;
+    background-image: url(https://dynamicmedia.audemarspiguet.com/is/image/audemarspiguet/image_code_HP_1920x1283?size=1920,0&wid=1920&fmt=avif-alpha&dpr=off);
+    background-size: contain;
+    background-position: center;
+}
+
+#work-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 60px;
+}
+
+#work-detail h2{
+    line-height: 135px;
+    width: 100%;  
+    font-size: 152px;
+    font-weight: 600;
+    letter-spacing: -6px;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+#work-detail2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+p{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--washedparagraph); 
+}
+#detail-tag-holder{
+    display: flex;
+    gap: 12px;
+}
+
+#detail-tag-holder h6{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--black);
+    color: var(--beigewhite);
+}
+
+
+#back-image3{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://cdn.dribbble.com/userupload/15909101/file/original-051d29406b77051e18eb161a9daad918.png?resize=1200x748);
+    background-size: cover;
+    background-position: center;
+}
+
+#back-image2{
+    height: 90%;
+    width: 100%;
+    background-image: url(https://cdn.dribbble.com/userupload/15909119/file/original-c931cc32bfd3e5bffef3ee1defb054b3.png?resize=1200x769);
+    background-size: cover;
+    background-position: center;
+}
+#dp{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    background-image: url(https://lh3.googleusercontent.com/a-/ALV-UjXpBcf6qAmAXWZL1PQJBRsbxY9xWbXrYFDrrqNWaebIi79wK7w=s32-c);
+    background-size: cover;
+    background-position: center;
+}
+
+#team{
+    padding: 20px 0px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#team h6:nth-child(1){
+    font-size: 18px;
+    font-weight:600;
+    color: var(--black);
+
+}
+
+#team h6:nth-child(2){
+    font-size: 18px;
+    font-weight:600;
+    color: var(--washedparagraph);
+
+}
+
+#letstalk{
+    margin-top: -60px;
+    width: 100%;
+    height: 80%;
+    background-color: var(--black);
+    color: var(--beigewhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+#letstalk h2{
+    line-height: 135px;
+    width: 100%;  
+    font-size: 152px;
+    font-weight: 600;
+    letter-spacing: -6px;
+    width: 100%;
+    align-self: center;
+    text-transform: capitalize;
+}
+#letstalk h4{
+    width: 90%;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 45px
+}
+#letstalk button{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 40px;
+
+}
+
+#footer{
+    width: 100%;
+    height: 40%;
+    background-color: var(--black);
+    color: var(--beigewhite);
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+#footer .p1{
+    width: 50%;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#ft{
+    width: 100%;
+    padding: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--black);
+    color: var(--washedparagraph);
+    text-align: center;
 }
