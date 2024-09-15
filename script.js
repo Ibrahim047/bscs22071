@@ -21,3 +21,20 @@ document.getElementById("menubtn").addEventListener("click", function() {
     workslide.style.transform = `translateX(${translateX}%)`;
 });
 
+gsap.from("#intro-div",{
+  opactity:0,
+  y:"-100%",
+  duration:1,
+  opactity:100,
+  delay:.2,
+  stager:1
+
+
+})
+
+fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("includefooter").innerHTML = data;
+        });
+

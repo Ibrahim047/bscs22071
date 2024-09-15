@@ -64,7 +64,7 @@ h1{
     padding: 60px 60px 10px 60px;
     line-height: 145px;
     width: 100%;  
-    
+    overflow: hidden;
     font-size: 72px;
     font-weight: 400;
     letter-spacing: -5px;
@@ -157,10 +157,11 @@ h4{
     position: fixed;
     top: 40px;
     right: 60px;
-    background-color: var(--black);
-    color: var(--beigewhite);
+    background-color: var(--beigewhite);
+    color: var(--black);
     padding: 10px 20px;
     align-items: center;
+    font-weight: 500;
     justify-content: center;
     border-radius: 150px;
     border: solid 1px var(--beigewhite);
@@ -187,6 +188,10 @@ h4{
 #socials{
     font-size: 24px;
     
+}
+
+#megamenu a{
+    color: var(--beigewhite);
 }
 
 a {
@@ -407,8 +412,9 @@ p{
 }
 
 #letstalk{
-    margin-top: -60px;
+    margin-top: none;
     width: 100%;
+    padding-top: 60px;
     height: 80%;
     background-color: var(--black);
     color: var(--beigewhite);
@@ -419,6 +425,7 @@ p{
     text-align: center;
     gap: 30px;
 }
+
 #letstalk h2{
     line-height: 135px;
     width: 100%;  
