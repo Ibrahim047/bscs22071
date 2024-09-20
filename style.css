@@ -417,7 +417,7 @@ p{
 #aboutwrapper{
     display: flex;
     width: 100%;
-   
+    height: 320vh;
     justify-content: space-between;
    
 }
@@ -571,6 +571,30 @@ p{
     border-radius: 40px;
 
 }
+form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    justify-content: stretch;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: stretch;
+    font-weight: 500;
+}
+
+.contactbtn{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 40px;
+
+}
 
 #footer{
     width: 100%;
@@ -603,6 +627,8 @@ p{
     color: var(--washedparagraph);
     text-align: center;
 }
+
+
 
 @media screen and (max-width: 991px){
 
@@ -642,6 +668,11 @@ p{
         line-height: 80px;
         margin-top: 80px;
         letter-spacing: -3px;
+    }
+
+    #place{
+        margin-top: 10px;
+        line-height: 26px;
     }
 
     #hero-vid video {
@@ -861,7 +892,8 @@ p{
 
 #back-image2{
     height: 50%; 
-    background-size: fill;
+    background-size: cover;
+    background-position: center;
 }
 
 

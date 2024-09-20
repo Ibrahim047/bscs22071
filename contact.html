@@ -61,30 +61,21 @@
                         <h1>Let's Connect</h1>
 
                     </div>
-                    <form id="contact-form" name="wf-form-Contact-Form"
-                        data-name="Contact Form" method="get" class="form"
-                        data-wf-page-id="64589fb989b2b32ccf3db8aa"
-                        data-wf-element-id="3c8b4d15-e451-2d61-02e5-0b5a337b7214"
-                        aria-label="Contact Form"><div
-                            class="form-field-wrapper"><input
-                                class="form-input w-input" maxlength="256"
-                                name="Name" data-name="Name"
-                                placeholder="Your Name" type="text" id="name"
-                                required></div><div
-                            class="form-field-wrapper"><input
-                                class="form-input w-input" maxlength="256"
-                                name="Email" data-name="Email"
-                                placeholder="Your Email" type="email"
-                                id="Email-2" required></div><div
-                            class="form-field-wrapper"><textarea id="Message-2"
-                                name="Message" maxlength="5000"
-                                data-name="Message" placeholder="Your Message"
-                                required class="form-input is-text-area w-input"
-                                spellcheck="false"></textarea></div><div
-                            class="contact-form-button-wrapper"><input
-                                type="submit" data-wait="Please wait..."
-                                class="button primary w-button"
-                                value="Send Message"></div></form>
+                    
+                    <form
+                        action="https://formspree.io/f/xanwzang"
+                        method="POST">
+                        <label>
+                            Your email:
+                            <input style="height: 40px; padding: 10px;" type="email" name="email">
+                        </label>
+                        <label>
+                            Your message:
+                            <textarea style="height: 150px; padding: 10px;" name="message"></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button style="padding: 15px; font-size: 16px; font-weight: 600;" type="submit">Send</button>
+                        </form>
 
                 </div>
 
