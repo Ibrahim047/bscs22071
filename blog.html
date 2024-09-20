@@ -30,6 +30,20 @@
 .list{
     columns: 300px;
 }
+#blogh1{
+    color: #1e1e21;
+    font-size: 7.5rem; 
+    font-weight: 600; 
+    padding: 60px;
+}
+@media screen and (max-width: 479px){
+    #blogh1{
+        font-size: 6rem;
+        padding: 20px;
+        margin-top: 60px;
+
+    }
+}
 
 </style>
 
@@ -37,15 +51,24 @@
 <body>
     
 
+
     <div id="menu">
         <a href="index.html">
         <i class="ri-focus-3-line"></i>
-
         </a>
-        <div id="menubtn">
 
-            <h3>menu</h3></div>
+        <div id="menubtn">
+            <div id="hideonmobile">
+                <h3>menu</h3>
+
+            </div>
+            <div id="hideondesktop">
+                <i class="ri-menu-3-line"></i>
+            </div>
+            
         </div>
+    </div>
+    
     <div id="megamenu" >
         <button id="closeBtn">x</button>
             <a href="index.html">
@@ -67,7 +90,8 @@
                 <H2>Contact</H2>
             </a>       
     </div>
-    <h1 style="font-size: 120px; font-weight: 600; padding: 60px;">Blogs</h1>
+
+    <h1 id="blogh1">Blogs</h1>
     <div class="list">
         <iframe width="100%" height="415" src="https://www.youtube.com/embed/-KdcvwU_E7g?si=BZhd4V5AGutETNx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <iframe width="100%" height="515" src="https://www.youtube.com/embed/vQXvyV0zIP4?si=UKSc5PWnuaq3abcF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

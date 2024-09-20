@@ -642,6 +642,8 @@ label{
 
 @media screen and (max-width: 479px){
 
+    
+
     #menu{
         padding: 20px;
         align-items: center;
@@ -971,5 +973,66 @@ p{
     
 }
 
+#aboutwrapper{
+    flex-direction: column;
+    height: auto;
+}
+#aboutvid{
+    position: static;
+    height: 60vh;
+}
 
+.aboutmewrapper{
+gap: 10px;
+}
+
+.aboutmewrapper h4{
+font-size: 28px;
+}
+.aboutmewrapper h3{
+    font-size: 32px;
+    width: 90%;
+    line-height: 32px;
+}
+
+.contentwrapper{
+    padding: 20px;
+}
+.aboutmewrapper h1{
+font-size: 72px;
+line-height: 80px;
+padding: 5px 0px;
+}
+
+#skills{
+    padding: 20px 0px;
+}
+#skills h4, i   {
+font-size: 20px;
+}
+.skillwrapper{
+    margin-top: 10px;
+}
+.gridbox{
+    flex-direction: column;
+}
+.contentwrapper h2{
+    font-size: 44px;
+    line-height: 50px;
+}
+.certificateswithdate{
+    padding: 15px 0px;
+
+}
+.certificateswithdate h4{
+font-size: 18px;
+
+}
+.contentwrapper{
+    height: auto;
+}
+.contactbtn{
+    
+    margin-bottom: 25%;
+}
 }
