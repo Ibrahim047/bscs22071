@@ -1,0 +1,40 @@
+{
+    "skills": [
+      ["Graphic Design", "UI Design", "UX Design"],
+      ["Design Motion", "Frontend Development", "Databases"]
+    ],
+    "certifications": [
+      {
+        "title": "Google UI/UX Design",
+        "date": "July, 2024"
+      },
+      
+      {
+        "title": "Udemy Figma Essentials",
+        "date": "June, 2024"
+      },
+      {
+        "title": "Webflow Expert",
+        "date": "May, 2024"
+      },
+      {
+        "title": "Webflow 101",
+        "date": "Jan, 2024"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor's Computer Science",
+        "year": "2022 - 2026"
+      },
+      {
+        "degree": "Pre-Medical",
+        "year": "2020 - 2022"
+      },
+      {
+        "degree": "Matriculation",
+        "year": "2018 - 2020"
+      }
+    ]
+  }
+  
