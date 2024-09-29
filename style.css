@@ -36,7 +36,7 @@ html, body{
 
 #menu h3{
     padding: 20px;
-    font-weight: 700;
+    font-weight: 600;
     background-color: var(--black);
     color: white;
     border-radius: 50px;
@@ -50,7 +50,7 @@ html, body{
 }
 #menu i{
     padding: 20px;
-    font-weight: 600; font-size: x-large;
+    font-weight: 500; font-size: x-large;
     background-color: var(--black);
     color: white;
     border-radius: 100px;
@@ -700,7 +700,8 @@ label{
     }
 
     #menu h3, #menu i {
-        padding: 10px;
+        font-weight: 500;
+        padding: 12px;
         font-size: 20px;
     }
 

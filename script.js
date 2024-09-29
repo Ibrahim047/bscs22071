@@ -28,10 +28,43 @@ gsap.from("#intro-div",{
   opactity:100,
   delay:.2,
   stager:1
-
-
 })
 
+gsap.from("#blogh1",{
+  opactity:0,
+  y:"-100%",
+  duration:1,
+  opactity:100,
+  delay:.2,
+  stager:1
+})
+
+gsap.from("#hero-vid",{
+  opactity:0,
+  y:"100%",
+  duration:1,
+  opactity:100,
+  delay:.2
+})
+
+
+gsap.from(".contentwrapper",{
+  opactity:0,
+  x:"100%",
+  duration:1,
+  opactity:100,
+  delay:.2,
+  stager:1
+})
+
+gsap.from("#aboutvid",{
+  opactity:0,
+  x:"-100%",
+  duration:1,
+  opactity:100,
+  delay:.2,
+  stager:1
+})
 fetch("footer.html")
         .then(response => response.text())
         .then(data => {
